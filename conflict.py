@@ -1,5 +1,4 @@
 from crfm import crfmChatLLM
-# import openai
 from langchain_community.chat_models import ChatOpenAI, ChatAnthropic
 from langchain.schema import (
     HumanMessage,
@@ -249,12 +248,8 @@ for instruction in teacher_instructions:
     print(instruction)
     for i in range(5):
         print(f"Conversation {i}")
-        # if len(instruction) <3:
-        #     continue
 
         conversation_history = []
-        # instruction = teacher_instructions[0]
-
         strategy_history = []
 
         for i in range(5):
@@ -281,4 +276,4 @@ for instruction in teacher_instructions:
         print(final_judge_response)
         
 
-# print(instruction_dict)
+print(instruction_dict)
